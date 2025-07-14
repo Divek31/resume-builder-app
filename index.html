@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartResume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SmartResume</h1>
+    <div class="container">
+
+  <div class="form-section">
+    <h2>Fill Your Resume Details</h2>
+    <form id="resume-form">
+      <label>Full Name:</label>
+      <input type="text" id="full-name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Phone:</label>
+      <input type="text" id="phone" required>
+
+      <label>LinkedIn:</label>
+      <input type="url" id="linkedin">
+
+      <label>GitHub:</label>
+      <input type="url" id="github">
+
+      <label>Education:</label>
+      <textarea id="education" placeholder="e.g., B.Tech in ECE, XYZ College, 2025"></textarea>
+
+      <label>Skills (comma-separated):</label>
+      <input type="text" id="skills">
+
+      <label>Projects:</label>
+      <textarea id="projects" placeholder="Project title and description"></textarea>
+
+      <label>Certifications:</label>
+      <textarea id="certifications"></textarea>
+
+      <button type="button" onclick="generateResume()">Preview Resume</button>
+    </form>
+  </div>
+
+  
+  <div class="preview-section" id="resume-preview">
+    <h2>Your Resume Preview</h2>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
